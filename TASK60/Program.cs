@@ -36,7 +36,7 @@ int [,,] ResultArray(int[]inArray, int xlocal, int ylocal, int zlocal)
     }
     return array;
 }
-void printArray2(int[,,] inArray)
+void printArray(int[,,] inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
@@ -52,4 +52,4 @@ void printArray2(int[,,] inArray)
 }
 int [] array = SelectArray(27);
 Console.WriteLine(string.Join(", ",array));
-printArray2(ResultArray(array,3,3,3));
+printArray(ResultArray(array,3,3,3));
